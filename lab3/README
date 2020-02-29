@@ -1,0 +1,4 @@
+In this lab problem, we will be introduced to implementing temperature sensing system using
+LM35 temperature sensor wired to the Arduino UNO board. The sensor data will be transmitted
+to Raspberry Pi using Bluetooth module connected on Arduino board. Then the data will be
+retransmitted to ThingSpeak ‘s channel and draw the chart using real-time data.
