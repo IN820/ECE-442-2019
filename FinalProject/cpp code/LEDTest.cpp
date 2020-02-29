@@ -1,3 +1,7 @@
+//this code was written before lab1 to test LED functions
+//Compile using:  g++ led_control.cpp -o led_control
+//                ./led_control
+
 #include <iostream>
 #include <wiringPi.h>
 #include <csignal>
