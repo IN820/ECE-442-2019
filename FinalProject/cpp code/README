@@ -1,0 +1,3 @@
+The code here are written in C++.
+These code are initially written for raspberry pi/GPIO port testing purposes, but fully operational.
+They are modules that may not be added in the final project.
