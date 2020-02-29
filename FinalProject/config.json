@@ -1,0 +1,8 @@
+{
+    "wifi_ssid":"NETGEAR95",
+    "wifi_password":"silkyjungle091**",
+    "mqtt_server":"192.168.1.10",
+    "mqtt_port":1883,
+    "mqtt_user":"pi",
+    "mqtt_password":"123456"
+}
