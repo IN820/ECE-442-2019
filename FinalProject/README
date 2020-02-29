@@ -10,3 +10,14 @@ At the beginning of this project, the design only had a simple light control and
 After the initial build was finished, I added more features including manual control state, more
 sensor, e-mail alert, etc to the system. All the data will be send through communication protocol
 to the HA server and the server can keep log of the changes of every sensor and light.
+----------------File Description------------------
+Main.py
+Main function of the ESP8266 board. Called the main source code.
+
+config.json
+"json" type of file. important connection requirement setup file.
+
+esp8266_source.py
+Main function.
+
+ps. there are some other configurations needed for this project on both PC and Raspberry Pi, please contact author if need help. 
