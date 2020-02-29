@@ -1,4 +1,4 @@
-// This code along with the the ClientServer_client.cpp are used to do a one-way connection between PC and Arduino Board
+// This code along with the the ClientServer_client.c are used to do a one-way connection between PC and Arduino Board
 // Eventually a Arduino to Raspberry Pi connection are used in this project, but this code are tested fully functional
 // Important** Use this code on pc to define host entrance
 //
