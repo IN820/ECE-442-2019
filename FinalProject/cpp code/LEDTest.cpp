@@ -2,10 +2,10 @@
 #include <wiringPi.h>
 #include <csignal>
 
-// global flag used to exit from the main loop
+// flag used to exit from the main loop
 bool RUNNING = true;
 
-// Blink an LED
+// FLash an LED
 void blink_led(int led, int time) {
     digitalWrite(led, HIGH);
     delay(time);
@@ -13,22 +13,22 @@ void blink_led(int led, int time) {
     delay(time);
 }
 
-// Callback handler if CTRL-C signal is detected
+// detect if CTRL-C signal is detected
 void my_handler(int s) {
     std::cout << "Detected CTRL-C signal no. " << s << '\n';
     RUNNING = false;
 }
 
 int main() {
-    // Register a callback function to be called if the user presses CTRL-C
+    // Define a callback function to be called if CTRL-C is detected
     std::signal(SIGINT, my_handler);
 
-    // Initialize wiringPi and allow the use of BCM pin numbering
+    // Initialize wiringPi to allow the use of pin numbering
     wiringPiSetupGpio();
 
-    std::cout << "Controlling the GPIO pins with wiringPi\n";
+    std::cout << "Controlling the GPIO pins\n";
 
-    // Define the 3 pins we are going to use
+    // Define the 3 pins
     int red = 17, yellow = 22, green = 6;
 
     // Setup the pins
@@ -36,12 +36,12 @@ int main() {
     pinMode(yellow, OUTPUT);
     pinMode(green, OUTPUT);
 
-    int time = 1000;   // interval at which a pin is turned HIGH/LOW
+    int time = 1000;   // interval time setup
     while(RUNNING) {
         blink_led(red, time);
         blink_led(yellow, time);
         blink_led(green, time);
     }
 
-    std::cout << "Program ended ...\n";
+    std::cout << "Program ends\n";
 }
