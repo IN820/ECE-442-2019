@@ -1,3 +1,4 @@
 The code here are written in C++.
-These code are initially written for raspberry pi GPIO/ PC connection testing purposes.
-They are modules that may not be added in the final project, but fully functional.
+These code are initially written for implementing the final project, but other approach/devices using python are used instead.
+Please see .py files for final approach. 
+These modules may not eventually be used in the final project, but are fully functional.
