@@ -20,4 +20,6 @@ config.json
 esp8266_source.py
 Main function.
 
-ps. there are some other configurations needed for this project on both PC and Raspberry Pi, please contact author if need help. 
+p.s. 
+Please note that there are some other configurations needed for this project on both PC and Raspberry Pi.
+I have wrote a turtorial for this project, please contact author if need help. 
