@@ -1,0 +1,4 @@
+In this lab problem, we will be introduced to the Raspberry Pi single-board computer. 
+A motion sensing system will be built based on the transmission client-server communication. 
+A simple UDP connection between Raspberry Pi and a server, encrypted data from the raspberry Pi are sent to the server, 
+and the data will be decrypted and displayed on the server.
